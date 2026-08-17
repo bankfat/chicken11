@@ -1,0 +1,744 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+     font-family: Arial, "Noto Sans Thai", sans-serif;
+     background: #F5F5F5;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    height: 62rem;
+     flex-direction:column;
+     display: flex;
+}
+header img{
+    width: 16rem;
+    background-color: rgb(255, 255, 255);
+    -webkit-user-drag: none;
+    cursor: pointer;
+}
+
+.a1 h1{
+    gap: 8px;
+    width:  13rem;
+    height:  55px;
+    background-color: #e72229;
+    color: #fdfdfd;
+    margin-top: 5rem;
+    display: flex;
+    justify-self: center;
+     align-items: center;
+     border-radius: 15px;
+     font-size: 20px;
+     padding-left: 15px;
+      user-select: none;
+      cursor: pointer;
+}
+.a12 :hover,
+.a13 :hover,
+.a14 :hover,
+.a15 :hover,
+.a16 :hover {
+    background-color: #c3afb0;
+}
+.a1 h1,
+.a12 h1,
+.a13 h1,
+.a14 h1,
+.a15 h1,
+.a16 h1{
+    gap: 8px;
+    width:  13rem;
+    height:  55px;
+    background-color: #e72229;
+    color: #2f1818;
+    margin-top: 5rem;
+    display: flex;
+    justify-self: center;
+     align-items: center;
+     border-radius: 15px;
+     font-size: 20px;
+     padding-left: 15px;
+      user-select: none;
+      cursor: pointer;
+}
+.a12 h1 i,
+.a13 h1 i,
+.a14 h1 i,
+.a15 h1 i,
+.a16 h1 i{
+    padding-top: 2px;
+}
+.a12 h1,
+.a13 h1,
+.a14 h1,
+.a15 h1,
+.a16 h1{
+    background-color: #ffffff;
+     margin-top: 1rem;
+}
+.a15 h1{
+    margin-bottom: 25rem;
+}
+.a1 i,
+.a112 i,
+.a113 i,
+.a114 i,
+.a115 i,
+.a116 i{
+    padding-top: 3px;
+}
+
+
+.header1{
+    display: flex;
+}
+.a2{
+    background-color: rgb(226, 35, 35);
+    width: 100rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+   padding-left: 62rem;
+   
+}
+.a22{
+    background-color: rgb(226, 35, 35);
+    width: 15rem;
+    height: 2.5rem;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    user-select: none;
+      cursor: pointer;
+}
+.a22 h1{
+    font-size: 20px;
+   padding-top: 9px;
+   
+}
+.a22 i{
+    font-size: 30px;  
+    padding-top: 6px;
+}
+.a23 {
+    display: flex;
+    gap: 15px ;
+}
+.a23 i{
+    font-size: 33px; 
+}
+
+.a3 h1{
+     margin-top: 1.5rem;
+     margin-left: 2rem;
+}
+.a33 p,
+.a34 p,
+.a35 p,
+.a36 p{
+    font-size: 50px;
+}
+.a33,
+.a34,
+.a35,
+.a36 {
+    background-color: #e72229;
+    color: #0a0a0a;
+  width: 15.5rem;
+  height: 12rem;
+  padding-top: 15px;
+  padding-left: 18px;
+   border-radius: 15px;
+   margin-left: 30px;
+   margin-top: 20px;
+}
+.a331,
+.a332,
+.a333,
+.a334{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    padding-top: 1rem;
+    gap: 5.5rem;
+    padding-bottom: 15px;
+}
+.a331 h2,
+.a332 h2,
+.a333 h2,
+.a334 h2{
+    color: #ffffff;
+}
+
+
+
+.a33 p {
+    font-size: 25px;
+    font-weight: bold;
+}
+.a331 i,
+.a332 i,
+.a333 i,
+.a334 i {
+    padding-top: 10px;
+}
+.a33-fo{
+    display: flex;
+    gap: 15px;
+}
+
+.a44{
+   background-color: #ffffff;
+   width: 17rem;
+    height: 30rem;
+   margin-left: 30px;
+   border-radius: 15px;
+   margin-top: 20px;
+}
+
+.a44 img{
+    width: 17rem;
+    height: 15rem;
+     border-radius: 15px;
+      -webkit-user-drag: none;
+}
+.aa4{
+    padding-top: 5px;
+    padding-left: 15px;
+}
+.aa4 h3{
+   
+    margin-bottom: 10px;
+}
+.a41{
+   margin-top: 15px;
+}
+.a41,
+.a42{
+    padding-top: 3px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+.a41 h3,
+.a42 h3,
+.a43{
+    font-size: 15px;
+    padding-top: 8px;
+}
+.a41 i,
+.a42 i{
+    font-size: 22px;
+}
+
+
+.a44-box{
+  justify-self: center;
+    background-color: #e72229;
+     width: 15rem;
+     height: 3rem;
+     margin-top: 20px;
+      border-radius: 10px;
+      user-select: none;
+      cursor: pointer;
+}
+.a44-box p{
+    padding-top: 5px;
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+    color: #ffffff;
+    
+}
+
+/* =================================
+   Responsive : Tablet
+================================= */
+
+@media (max-width: 1024px) {
+
+    header {
+        width: 210px;
+    }
+
+    header img {
+        width: 13rem;
+    }
+
+    .a1 h1,
+    .a12 h1,
+    .a13 h1,
+    .a14 h1,
+    .a15 h1,
+    .a16 h1 {
+        width: 10.5rem;
+        font-size: 17px;
+    }
+
+    .a2 {
+        width: calc(100% - 210px);
+        padding-left: 0;
+        justify-content: flex-end;
+        padding-right: 25px;
+    }
+
+    .a3 {
+        width: calc(100% - 210px);
+    }
+
+    .a33-fo {
+        flex-wrap: wrap;
+    }
+
+    .a33,
+    .a34,
+    .a35,
+    .a36 {
+        margin-left: 20px;
+    }
+}
+
+
+/* =================================
+   Responsive : Mobile
+================================= */
+
+@media (max-width: 768px) {
+
+    /* -------------------------
+       Sidebar
+    ------------------------- */
+
+    header {
+        width: 70px;
+        height: 100vh;
+
+        position: fixed;
+        left: 0;
+        top: 0;
+
+        z-index: 1000;
+
+        overflow: hidden;
+    }
+
+    header img {
+       display: none;
+    }
+
+
+    /* ซ่อนข้อความเมนู */
+    .a1 h1,
+    .a12 h1,
+    .a13 h1,
+    .a14 h1,
+    .a15 h1,
+    .a16 h1 {
+
+        width: 50px;
+        height: 50px;
+
+        padding-left: 0;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        margin-top: 20px;
+
+        justify-content: center;
+
+        font-size: 0;
+
+        border-radius: 12px;
+    }
+
+
+    /* แสดงเฉพาะ Icon */
+    .a1 h1 i,
+    .a12 h1 i,
+    .a13 h1 i,
+    .a14 h1 i,
+    .a15 h1 i,
+    .a16 h1 i {
+
+        font-size: 22px;
+
+        margin: 0;
+        padding: 0;
+    }
+
+
+    /* -------------------------
+       Topbar
+    ------------------------- */
+
+    .a2 {
+
+        width: calc(100% - 70px);
+
+        height: 70px;
+
+        padding: 0 15px;
+
+        justify-content: flex-end;
+
+        position: fixed;
+
+        right: 0;
+        top: 0;
+
+        z-index: 999;
+    }
+
+
+    .a22 {
+
+        width: auto;
+
+        background-color: transparent;
+
+        gap: 15px;
+    }
+
+
+    .a22 h1 {
+
+        font-size: 0;
+    }
+
+
+    .a22 h1::after {
+
+        content: "เข้าสู่ระบบ";
+
+        font-size: 15px;
+    }
+
+
+    .a22 i {
+
+        font-size: 25px;
+    }
+
+
+    .a23 {
+
+        gap: 8px;
+    }
+
+
+    .a23 i {
+
+        font-size: 28px;
+    }
+
+
+    /* -------------------------
+       Main
+    ------------------------- */
+
+    .a3 {
+
+        margin-left: 70px;
+
+        padding: 90px 15px 30px;
+
+        width: calc(100% - 70px);
+
+        min-height: 100vh;
+
+        overflow-x: hidden;
+    }
+
+
+    .a3 h1 {
+
+        margin-left: 0;
+        margin-top: 0;
+
+        font-size: 25px;
+    }
+
+
+    /* -------------------------
+       Dashboard Cards
+    ------------------------- */
+
+    .a33-fo {
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 12px;
+
+        width: 100%;
+    }
+
+
+    .a33,
+    .a34,
+    .a35,
+    .a36 {
+
+        width: auto;
+
+        height: 130px;
+
+        margin: 0;
+
+        padding: 15px;
+
+        border-radius: 12px;
+    }
+
+
+    .a33 p,
+    .a34 p,
+    .a35 p,
+    .a36 p {
+
+        font-size: 15px;
+    }
+
+
+    .a331,
+    .a332,
+    .a333,
+    .a334 {
+
+        justify-content: space-between;
+
+        font-size: 2rem;
+
+        gap: 0;
+
+        padding-top: 10px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+    }
+
+
+    .a331 h2,
+    .a332 h2,
+    .a333 h2,
+    .a334 h2 {
+
+        font-size: 35px;
+    }
+
+
+    .a331 i,
+    .a332 i,
+    .a333 i,
+    .a334 i {
+
+        font-size: 25px;
+
+        padding-top: 5px;
+    }
+
+
+    /* -------------------------
+       Activity
+    ------------------------- */
+
+    .a4 {
+
+        margin-top: 30px;
+    }
+
+
+    .a4 > h1 {
+
+        font-size: 23px;
+    }
+
+
+    .a44 {
+
+        width: 100%;
+
+        max-width: 340px;
+
+        height: auto;
+
+        margin-left: 0;
+
+        margin-top: 15px;
+
+        overflow: hidden;
+    }
+
+
+    .a44 img {
+        
+        width: 100%;
+
+        height: auto;
+
+        max-height: 230px;
+
+        object-fit: cover;
+
+        display: block;
+    }
+
+
+    .aa4 {
+
+        padding: 12px 15px;
+    }
+
+
+    .aa4 h3 {
+
+        font-size: 15px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .a41,
+    .a42 {
+
+        gap: 8px;
+    }
+
+
+    .a41 h3,
+    .a42 h3,
+    .a43 {
+
+        font-size: 13px;
+    }
+
+
+    .a41 i,
+    .a42 i {
+
+        font-size: 18px;
+    }
+
+
+    /* -------------------------
+       Register Button
+    ------------------------- */
+
+    .a44-box {
+
+        width: calc(100% - 30px);
+
+        height: 45px;
+
+        margin: 15px auto;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+    }
+
+
+    .a44-box p {
+
+        padding-top: 0;
+
+        font-size: 20px;
+    }
+
+}
+
+
+/* =================================
+   Responsive : Small Mobile
+================================= */
+
+@media (max-width: 480px) {
+
+    header {
+        width: 60px;
+    }
+
+
+    header img {
+        display: none;
+    }
+
+    .a1 h1{}
+
+    .a1 h1,
+    .a12 h1,
+    .a13 h1,
+    .a14 h1,
+    .a15 h1,
+    .a16 h1 {
+
+        width: 44px;
+        height: 44px;
+    }
+
+
+    .a1 h1 i,
+    .a12 h1 i,
+    .a13 h1 i,
+    .a14 h1 i,
+    .a15 h1 i,
+    .a16 h1 i {
+
+        font-size: 19px;
+    }
+
+
+    .a2 {
+
+        width: calc(100% - 60px);
+
+        height: 60px;
+    }
+
+
+    .a3 {
+
+        margin-left: 60px;
+
+        width: calc(100% - 60px);
+
+        padding: 75px 10px 25px;
+    }
+
+
+    /* การ์ดเรียง 1 คอลัมน์ */
+
+    .a33-fo {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .a33,
+    .a34,
+    .a35,
+    .a36 {
+
+        height: 110px;
+    }
+
+
+    .a44 {
+
+        max-width: 100%;
+    }
+
+
+    .a44 img {
+
+        max-height: 220px;
+    }
+
+}

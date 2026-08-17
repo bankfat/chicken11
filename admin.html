@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ผู้ดูแลระบบ</title>
+
+    <link rel="stylesheet" href="admin.css">
+
+    <!-- Flaticon -->
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+</head>
+
+<body>
+
+<div class="admin-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fi fi-rr-school"></i>
+            </div>
+
+            <div>
+                <h2>ระบบกิจกรรม</h2>
+                <p>ผู้ดูแลระบบ</p>
+            </div>
+        </div>
+
+        <nav>
+
+            <a href="#" class="menu active">
+                <i class="fi fi-rr-home"></i>
+                <span>หน้าหลัก</span>
+            </a>
+
+            <a href="#" class="menu">
+                <i class="fi fi-rr-user"></i>
+                <span>จัดการนักเรียน</span>
+            </a>
+
+            <a href="#" class="menu">
+                <i class="fi fi-rr-chalkboard-user"></i>
+                <span>จัดการครู</span>
+            </a>
+
+            <a href="#" class="menu">
+                <i class="fi fi-rr-calendar"></i>
+                <span>จัดการกิจกรรม</span>
+            </a>
+
+            <a href="#" class="menu">
+                <i class="fi fi-rr-chart-histogram"></i>
+                <span>รายงาน</span>
+            </a>
+
+            <a href="#" class="menu">
+                <i class="fi fi-rr-settings"></i>
+                <span>ตั้งค่าระบบ</span>
+            </a>
+
+        </nav>
+
+        <div class="logout" onclick="goPage()">
+            <a href="#" class="menu">
+                <i class="fi fi-rr-sign-out-alt"></i>
+                <span>ออกจากระบบ</span>
+            </a>
+        </div>
+
+    </aside>
+
+
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <div>
+                <h1>หน้าหลัก</h1>
+                <p>ภาพรวมระบบบันทึกการเข้าร่วมกิจกรรม</p>
+            </div>
+
+            <div class="admin-profile">
+                <div class="profile-icon">
+                    <i class="fi fi-rr-user"></i>
+                </div>
+
+                <div>
+                    <strong>ผู้ดูแลระบบ</strong>
+                    <small>Administrator</small>
+                </div>
+            </div>
+
+        </header>
+
+
+        <!-- Welcome -->
+        <section class="welcome">
+
+            <div>
+                <h2>สวัสดี Admin </h2>
+                <p>ยินดีต้อนรับเข้าสู่ระบบจัดการกิจกรรมของวิทยาลัย</p>
+            </div>
+
+        </section>
+
+
+        <!-- Cards -->
+        <section class="cards">
+
+            <div class="card">
+                <div class="card-icon student">
+                    <i class="fi fi-rr-user"></i>
+                </div>
+
+                <div>
+                    <p>นักเรียนทั้งหมด</p>
+                    <h2>520</h2>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon teacher">
+                    <i class="fi fi-rr-chalkboard-user"></i>
+                </div>
+
+                <div>
+                    <p>ครูทั้งหมด</p>
+                    <h2>35</h2>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon activity">
+                    <i class="fi fi-rr-calendar"></i>
+                </div>
+
+                <div>
+                    <p>กิจกรรมทั้งหมด</p>
+                    <h2>28</h2>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon pending">
+                    <i class="fi fi-rr-time-forward"></i>
+                </div>
+
+                <div>
+                    <p>รอตรวจสอบ</p>
+                    <h2>42</h2>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Content -->
+        <section class="content-grid">
+
+            <!-- Recent Activity -->
+            <div class="box">
+
+                <div class="box-header">
+                    <div>
+                        <h2>กิจกรรมล่าสุด</h2>
+                        <p>รายการกิจกรรมภายในวิทยาลัย</p>
+                    </div>
+
+                    <button class="view-btn">
+                        ดูทั้งหมด
+                    </button>
+                </div>
+
+
+                <div class="table">
+
+                    <div class="table-head">
+                        <span>กิจกรรม</span>
+                        <span>วันที่</span>
+                        <span>สถานะ</span>
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <div class="activity-name">
+                            <div class="small-icon">
+                                <i class="fi fi-rr-trophy"></i>
+                            </div>
+
+                            <div>
+                                <strong>กิจกรรมกีฬาสี</strong>
+                                <small>กิจกรรมประจำปี</small>
+                            </div>
+                        </div>
+
+                        <span>15/08/2026</span>
+
+                        <span class="status open">
+                            เปิดอยู่
+                        </span>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <div class="activity-name">
+                            <div class="small-icon">
+                                <i class="fi fi-rr-hand-holding-heart"></i>
+                            </div>
+
+                            <div>
+                                <strong>กิจกรรมจิตอาสา</strong>
+                                <small>กิจกรรมเพื่อสังคม</small>
+                            </div>
+                        </div>
+
+                        <span>14/08/2026</span>
+
+                        <span class="status closed">
+                            ปิดแล้ว
+                        </span>
+
+                    </div>
+
+
+                    <div class="table-row">
+
+                        <div class="activity-name">
+                            <div class="small-icon">
+                                <i class="fi fi-rr-book-alt"></i>
+                            </div>
+
+                            <div>
+                                <strong>อบรมเทคโนโลยี</strong>
+                                <small>อบรมความรู้</small>
+                            </div>
+                        </div>
+
+                        <span>12/08/2026</span>
+
+                        <span class="status open">
+                            เปิดอยู่
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Quick Menu -->
+            <div class="box quick-box">
+
+                <div class="box-header">
+                    <div>
+                        <h2>จัดการระบบ</h2>
+                        <p>เมนูที่ใช้งานบ่อย</p>
+                    </div>
+                </div>
+
+
+                <div class="quick-menu">
+
+                    <button>
+                        <i class="fi fi-rr-user"></i>
+                        <span>
+                            <strong>จัดการนักเรียน</strong>
+                            <small>เพิ่ม แก้ไข และลบข้อมูล</small>
+                        </span>
+
+                        <i class="fi fi-rr-angle-small-right"></i>
+                    </button>
+
+
+                    <button>
+                        <i class="fi fi-rr-chalkboard-user"></i>
+                        <span>
+                            <strong>จัดการครู</strong>
+                            <small>จัดการบัญชีครู</small>
+                        </span>
+
+                        <i class="fi fi-rr-angle-small-right"></i>
+                    </button>
+
+
+                    <button>
+                        <i class="fi fi-rr-calendar"></i>
+                        <span>
+                            <strong>จัดการกิจกรรม</strong>
+                            <small>เพิ่มและแก้ไขกิจกรรม</small>
+                        </span>
+
+                        <i class="fi fi-rr-angle-small-right"></i>
+                    </button>
+
+
+                    <button>
+                        <i class="fi fi-rr-chart-histogram"></i>
+                        <span>
+                            <strong>ดูรายงาน</strong>
+                            <small>สรุปข้อมูลการเข้าร่วม</small>
+                        </span>
+
+                        <i class="fi fi-rr-angle-small-right"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+<script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,595 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, "Noto Sans Thai", sans-serif;
+
+    background: #f4f5f7;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #222;
+}
+
+
+/* =========================
+   หน้าหลัก
+========================= */
+
+.login-page {
+
+    width: 100%;
+
+    max-width: 550px;
+
+    min-height: 100vh;
+
+    background: #f4f5f7;
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding-bottom: 40px;
+}
+
+
+/* =========================
+   ส่วนหัวสีแดง
+========================= */
+
+.top-section {
+
+    width: 100%;
+
+    height: 285px;
+
+    background: #e72229;
+
+    position: relative;
+
+    text-align: center;
+
+    color: white;
+
+    padding-top: 25px;
+
+}
+
+
+/* Logo */
+
+.logo {
+
+    width: 95px;
+
+    height: 95px;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin: auto;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* ชื่อวิทยาลัย */
+
+.top-section h1 {
+
+    margin-top: 8px;
+
+    font-size: 27px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.top-section p {
+
+    margin-top: 5px;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================
+   Login Box
+========================= */
+
+.login-box {
+
+    width: calc(100% - 50px);
+
+    margin: -80px auto 0;
+
+    background: white;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    position: relative;
+
+    z-index: 5;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   Icon Lock
+========================= */
+
+.login-icon {
+
+    width: 65px;
+
+    height: 65px;
+
+    border-radius: 50%;
+
+    background: #fbe6e7;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin: -5px auto 10px;
+}
+
+
+.login-icon i {
+
+    font-size: 32px;
+
+    color: #e72229;
+}
+
+
+/* =========================
+   หัวข้อ
+========================= */
+
+.login-box h2 {
+
+    text-align: center;
+
+    font-size: 27px;
+
+    margin-top: 5px;
+}
+
+
+.sub-title {
+
+    text-align: center;
+
+    color: #999;
+
+    font-size: 15px;
+
+    margin-top: 8px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   Input
+========================= */
+
+.input-box {
+
+    width: 100%;
+
+    height: 50px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 14px;
+
+    margin-bottom: 14px;
+
+    background: white;
+
+    transition: 0.2s;
+}
+
+
+.input-box:focus-within {
+
+    border-color: #e72229;
+
+    box-shadow: 0 0 0 2px rgba(231, 34, 41, 0.08);
+}
+
+
+.input-box > i:first-child {
+
+    color: #e72229;
+
+    font-size: 21px;
+
+    margin-right: 12px;
+}
+
+
+.input-box input {
+
+    width: 100%;
+
+    height: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 16px;
+
+    font-family: inherit;
+
+    background: transparent;
+}
+
+
+.input-box input::placeholder {
+
+    color: #999;
+}
+
+
+/* ตา */
+
+.input-box .eye {
+
+    color: #777;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    margin-left: 8px;
+}
+
+
+
+
+.forgot a {
+
+    color: #e72229;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   ปุ่ม Login
+========================= */
+
+.login-btn {
+
+    width: 100%;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #e72229;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-family: inherit;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    transition: 0.2s;
+}
+
+
+.login-btn:hover {
+
+    background: #c91c22;
+}
+
+
+.login-btn i {
+    padding-top: 8px;
+    font-size: 20px;
+}
+
+.login-btn2 {
+
+    width: 100%;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #e72229;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-family: inherit;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    transition: 0.2s;
+}
+
+
+.login-btn2:hover {
+
+    background: #c91c22;
+}
+
+
+.login-btn2 i {
+    padding-top: 8px;
+    font-size: 20px;
+}
+
+.login-btn3 {
+    margin-top: 5px;
+    width: 100%;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #e72229;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-family: inherit;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    transition: 0.2s;
+}
+
+
+.login-btn3:hover {
+
+    background: #c91c22;
+}
+
+
+.login-btn3 i {
+    padding-top: 8px;
+    font-size: 20px;
+}
+
+/* =========================
+   OR
+========================= */
+
+.or {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 20px 0;
+}
+
+
+.or span {
+
+    height: 1px;
+
+    background: #ddd;
+
+    flex: 1;
+}
+
+
+.or p {
+
+    color: #999;
+
+    font-size: 14px;
+}
+
+
+
+
+/* =========================
+   Security
+========================= */
+
+.security {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 25px;
+
+    color: #aaa;
+
+    font-size: 13px;
+
+    text-align: center;
+}
+
+
+.security i {
+
+    font-size: 22px;
+    padding-top: 5px;
+    color: #aaa;
+}
+
+
+/* =========================
+   มือถือ
+========================= */
+
+@media (max-width: 480px) {
+
+    body {
+
+        align-items: flex-start;
+    }
+
+
+    .login-page {
+
+        min-height: 100vh;
+    }
+
+
+    .top-section {
+
+        height: 250px;
+
+        padding-top: 18px;
+    }
+
+
+    .logo {
+
+        width: 75px;
+
+        height: 75px;
+    }
+
+
+    .top-section h1 {
+
+        font-size: 22px;
+    }
+
+
+    .top-section p {
+
+        font-size: 14px;
+    }
+
+
+    .login-box {
+
+        width: calc(100% - 30px);
+
+        padding: 20px;
+
+        margin-top: -25px;
+    }
+
+
+    .login-box h2 {
+
+        font-size: 24px;
+    }
+
+
+    .sub-title {
+
+        font-size: 13px;
+    }
+
+
+    .input-box {
+
+        height: 48px;
+    }
+
+
+    .login-btn,
+    .college-btn {
+
+        height: 48px;
+    }
+
+
+    .security {
+
+        padding: 0 15px;
+
+        font-size: 11px;
+    }
+
+}

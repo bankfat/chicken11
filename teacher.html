@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>หน้าครู | ระบบกิจกรรม</title>
+
+    <link rel="stylesheet" href="teacher.css">
+
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+</head>
+
+<body>
+
+<div class="teacher-layout">
+
+    <!-- =========================
+         Sidebar
+    ========================== -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fi fi-rr-school"></i>
+            </div>
+
+            <div>
+                <h2>ระบบกิจกรรม</h2>
+                <p>สำหรับครู</p>
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="#" class="menu active">
+                <i class="fi fi-rr-home"></i>
+                <span>หน้าหลัก</span>
+            </a>
+
+
+            <a href="#" class="menu">
+                <i class="fi fi-rr-time-past"></i>
+                <span>รอตรวจสอบ</span>
+
+                <b class="menu-number">3</b>
+            </a>
+
+
+            <a href="#" class="menu">
+                <i class="fi fi-rr-check-circle"></i>
+                <span>อนุมัติแล้ว</span>
+            </a>
+
+
+            <a href="#" class="menu">
+                <i class="fi fi-rr-cross-circle"></i>
+                <span>ไม่อนุมัติ</span>
+            </a>
+
+
+            <a href="#" class="menu">
+                <i class="fi fi-rr-chart-histogram"></i>
+                <span>รายงาน</span>
+            </a>
+
+
+            <a href="#" class="menu">
+                <i class="fi fi-rr-settings"></i>
+                <span>ตั้งค่า</span>
+            </a>
+
+        </nav>
+
+
+        <!-- Logout -->
+
+        <div class="logout" onclick="goPage()">
+
+            <a href="#" class="menu">
+
+                <i class="fi fi-rr-sign-out-alt"></i>
+
+                <span>ออกจากระบบ</span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- =========================
+         Main
+    ========================== -->
+
+    <main class="main">
+
+
+        <!-- Header -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>หน้าหลัก</h1>
+
+                <p>
+                    ตรวจสอบการเข้าร่วมกิจกรรมของนักศึกษา
+                </p>
+
+            </div>
+
+
+            <div class="teacher-profile">
+
+                <div class="profile-icon">
+
+                    <i class="fi fi-rr-user"></i>
+
+                </div>
+
+
+                <div>
+
+                    <strong>ครูผู้ดูแล</strong>
+
+                    <small>Teacher</small>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- =========================
+             Welcome
+        ========================== -->
+
+        <section class="welcome">
+
+            <div>
+
+                <h2>
+                    สวัสดี คุณครู 
+                </h2>
+
+                <p>
+                    ยินดีต้อนรับเข้าสู่ระบบตรวจสอบกิจกรรม
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             Statistics
+        ========================== -->
+
+        <section class="stats">
+
+
+            <div class="stat-box">
+
+                <div>
+
+                    <p>รอตรวจสอบ</p>
+
+                    <h2>3</h2>
+
+                </div>
+
+
+                <div class="stat-icon waiting">
+
+                    <i class="fi fi-rr-time-past"></i>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-box">
+
+                <div>
+
+                    <p>อนุมัติแล้ว</p>
+
+                    <h2>12</h2>
+
+                </div>
+
+
+                <div class="stat-icon approved">
+
+                    <i class="fi fi-rr-check-circle"></i>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-box">
+
+                <div>
+
+                    <p>ไม่อนุมัติ</p>
+
+                    <h2>2</h2>
+
+                </div>
+
+
+                <div class="stat-icon rejected">
+
+                    <i class="fi fi-rr-cross-circle"></i>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="stat-box">
+
+                <div>
+
+                    <p>ตรวจสอบทั้งหมด</p>
+
+                    <h2>17</h2>
+
+                </div>
+
+
+                <div class="stat-icon total">
+
+                    <i class="fi fi-rr-document"></i>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             Pending
+        ========================== -->
+
+        <section class="content-box">
+
+
+            <div class="content-header">
+
+                <div>
+
+                    <h2>
+                        รายการรอตรวจสอบ
+                    </h2>
+
+                    <p>
+                        ตรวจสอบหลักฐานการเข้าร่วมกิจกรรมของนักศึกษา
+                    </p>
+
+                </div>
+
+
+                <div class="filter">
+
+                    <select>
+
+                        <option>
+                            กิจกรรมทั้งหมด
+                        </option>
+
+                        <option>
+                            กิจกรรมจิตอาสา
+                        </option>
+
+                        <option>
+                            กิจกรรมกีฬา
+                        </option>
+
+                        <option>
+                            กิจกรรมอบรม
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Table -->
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>นักศึกษา</th>
+
+                            <th>กิจกรรม</th>
+
+                            <th>วันที่</th>
+
+                            <th>หลักฐาน</th>
+
+                            <th>สถานะ</th>
+
+                            <th>จัดการ</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <!-- รายการที่ 1 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="student">
+
+                                    <div class="avatar">
+                                        ส
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            สมชาย ใจดี
+                                        </strong>
+
+                                        <span>
+                                            6530101001
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                กิจกรรมจิตอาสา
+                            </td>
+
+
+                            <td>
+                                15/08/2026
+                            </td>
+
+
+                            <td>
+
+                                <button class="view-btn">
+
+                                    <i class="fi fi-rr-picture"></i>
+
+                                    ดูรูป
+
+                                </button>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="status pending">
+                                    รอตรวจสอบ
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="actions">
+
+                                    <button class="approve">
+
+                                        <i class="fi fi-rr-check"></i>
+
+                                    </button>
+
+
+                                    <button class="reject">
+
+                                        <i class="fi fi-rr-cross"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- รายการที่ 2 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="student">
+
+                                    <div class="avatar">
+                                        ป
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            ประยุทธ์ ใจดี
+                                        </strong>
+
+                                        <span>
+                                            6530101002
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                กิจกรรมกีฬา
+                            </td>
+
+
+                            <td>
+                                14/08/2026
+                            </td>
+
+
+                            <td>
+
+                                <button class="view-btn">
+
+                                    <i class="fi fi-rr-picture"></i>
+
+                                    ดูรูป
+
+                                </button>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="status pending">
+                                    รอตรวจสอบ
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="actions">
+
+                                    <button class="approve">
+
+                                        <i class="fi fi-rr-check"></i>
+
+                                    </button>
+
+
+                                    <button class="reject">
+
+                                        <i class="fi fi-rr-cross"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- รายการที่ 3 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="student">
+
+                                    <div class="avatar">
+                                        ก
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            กิตติพงษ์ ใจดี
+                                        </strong>
+
+                                        <span>
+                                            6530101003
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                กิจกรรมอบรม
+                            </td>
+
+
+                            <td>
+                                13/08/2026
+                            </td>
+
+
+                            <td>
+
+                                <button class="view-btn">
+
+                                    <i class="fi fi-rr-picture"></i>
+
+                                    ดูรูป
+
+                                </button>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="status pending">
+                                    รอตรวจสอบ
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <div class="actions">
+
+                                    <button class="approve">
+
+                                        <i class="fi fi-rr-check"></i>
+
+                                    </button>
+
+
+                                    <button class="reject">
+
+                                        <i class="fi fi-rr-cross"></i>
+
+                                    </button>
+
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+<script src="teacher.js"></script>
+</body>
+
+</html>

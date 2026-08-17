@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="login.css">
+
+    <!-- Flaticon -->
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <title>เข้าสู่ระบบ | ระบบกิจกรรมวิทยาลัย</title>
+</head>
+
+<body>
+
+    <div class="login-page">
+
+        <!-- ส่วนหัว -->
+        <div class="top-section">
+
+            <img src="img/12.png" class="logo" alt="โลโก้วิทยาลัย">
+
+            <h1>วิทยาลัยเทคนิคสว่างแดนดิน</h1>
+            <p>ระบบกิจกรรมเสริมหลักสูตร</p>
+
+        </div>
+
+
+        <!-- กล่อง Login -->
+        <div class="login-box">
+
+            <!-- Icon -->
+            <div class="login-icon">
+                <i class="fi fi-rr-lock"></i>
+            </div>
+
+
+            <h2>เข้าสู่ระบบ</h2>
+
+            <p class="sub-title">
+                เข้าสู่ระบบเพื่อใช้งานระบบกิจกรรม
+            </p>
+
+
+            <!-- รหัส -->
+            <div class="input-box">
+
+                <i class="fi fi-rr-user"></i>
+
+                <input
+                    type="text"
+                    placeholder="รหัสนักศึกษา / รหัสครู"
+                >
+
+            </div>
+
+
+            <!-- รหัสผ่าน -->
+            <div class="input-box">
+
+                <i class="fi fi-rr-lock"></i>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="รหัสผ่าน"
+                >
+
+                
+
+            </div>
+            
+
+
+            <!-- ปุ่ม Login -->
+            <button class="login-btn" onclick="goPage()">
+                เข้าสู่ระบบ
+                <i class="fi fi-rr-arrow-right"></i>
+            </button>
+
+
+            <!-- เส้น หรือ -->
+            <div class="or">
+
+                <span></span>
+
+                <p>หรือ</p>
+
+                <span></span>
+
+            </div>
+
+            <div onclick="goPage1()">
+                <button class="login-btn2">
+                    <i class="fi fi-rs-admin-alt"></i>
+                Admin
+                
+            </button>
+            </div>
+            <div onclick="goPage2()">
+                <button class="login-btn3">
+                    <i class="fi fi-rr-person-chalkboard"></i>
+                teacher
+                
+            </button></div>
+           
+
+        </div>
+
+
+        <!-- ข้อความด้านล่าง -->
+        <div class="security">
+
+            <i class="fi fi-rr-shield-check"></i>
+
+            <span>
+                ปลอดภัย ข้อมูลของคุณจะถูกเก็บเป็นความลับ
+            </span>
+
+        </div>
+
+    </div>
+
+<script src="login.js"></script>
+</body>
+</html>
